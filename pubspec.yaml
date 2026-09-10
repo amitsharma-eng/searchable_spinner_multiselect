@@ -1,0 +1,28 @@
+name: searchable_spinner_multiselect
+description: A modern Flutter searchable multi-select widget with Select All, Clear All, async search, pagination and max selection.
+version: 1.0.0
+homepage: https://pub.dev/packages/searchable_spinner_multiselect
+repository: https://github.com/amitsharma-eng/searchable_spinner_multiselect
+issue_tracker: https://github.com/amitsharma-eng/searchable_spinner_multiselect/issues
+topics:
+  - dropdown
+  - searchable
+  - multiselect
+  - spinner
+  - select-all
+
+environment:
+  sdk: ">=3.10.0 <4.0.0"
+  flutter: ">=3.38.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
