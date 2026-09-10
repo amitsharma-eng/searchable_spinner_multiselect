@@ -55,8 +55,6 @@
     
 <section class="desc markdown">
   <p>A generic, responsive, Material 3 searchable multi-select field.</p>
-<p>Supports local filtering, debounced async search, pagination,
-Select All, Clear All, max selection, validation and custom builders.</p>
 </section>
 
 
@@ -93,14 +91,14 @@ Select All, Clear All, max selection, validation and custom builders.</p>
           <span class="name"><a href="../searchable_spinner_multiselect/SearchableMultiSelect/SearchableMultiSelect.html">SearchableMultiSelect</a></span><span class="signature">({<span class="parameter" id="param-key"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/foundation/Key-class.html">Key</a>?</span> <span class="parameter-name">key</span>, </span><span class="parameter" id="param-items"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span> <span class="parameter-name">items</span>, </span><span class="parameter" id="param-itemLabel"><span>required</span> <span class="type-annotation"><a href="../searchable_spinner_multiselect/SearchableMultiSelectItemLabel.html">SearchableMultiSelectItemLabel</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span> <span class="parameter-name">itemLabel</span>, </span><span class="parameter" id="param-values"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span> <span class="parameter-name">values</span>, </span><span class="parameter" id="param-onChanged"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/foundation/ValueChanged.html">ValueChanged</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span>&gt;</span></span> <span class="parameter-name">onChanged</span>, </span><span class="parameter" id="param-label"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">label</span>, </span><span class="parameter" id="param-hintText"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">hintText</span> = <span class="default-value">&#39;Select items&#39;</span>, </span><span class="parameter" id="param-searchHintText"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">searchHintText</span> = <span class="default-value">&#39;Search...&#39;</span>, </span><span class="parameter" id="param-prefixIcon"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/IconData-class.html">IconData</a>?</span> <span class="parameter-name">prefixIcon</span>, </span><span class="parameter" id="param-clearable"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">clearable</span> = <span class="default-value">true</span>, </span><span class="parameter" id="param-enabled"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">enabled</span> = <span class="default-value">true</span>, </span><span class="parameter" id="param-searchable"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">searchable</span> = <span class="default-value">true</span>, </span><span class="parameter" id="param-selectAllEnabled"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">selectAllEnabled</span> = <span class="default-value">true</span>, </span><span class="parameter" id="param-selectAllText"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">selectAllText</span> = <span class="default-value">&#39;Select All&#39;</span>, </span><span class="parameter" id="param-clearAllText"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">clearAllText</span> = <span class="default-value">&#39;Clear All&#39;</span>, </span><span class="parameter" id="param-doneText"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">doneText</span> = <span class="default-value">&#39;Done&#39;</span>, </span><span class="parameter" id="param-emptyText"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">emptyText</span> = <span class="default-value">&#39;No items found&#39;</span>, </span><span class="parameter" id="param-loadingText"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">loadingText</span> = <span class="default-value">&#39;Loading...&#39;</span>, </span><span class="parameter" id="param-errorText"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">errorText</span> = <span class="default-value">&#39;Something went wrong&#39;</span>, </span><span class="parameter" id="param-validator"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/FormFieldValidator.html">FormFieldValidator</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span>&gt;</span>?</span> <span class="parameter-name">validator</span>, </span><span class="parameter" id="param-itemBuilder"><span class="type-annotation"><a href="../searchable_spinner_multiselect/SearchableMultiSelectItemBuilder.html">SearchableMultiSelectItemBuilder</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span>?</span> <span class="parameter-name">itemBuilder</span>, </span><span class="parameter" id="param-selectedTextBuilder"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">selectedTextBuilder</span>(<span class="parameter" id="param-values"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span> <span class="parameter-name">values</span></span>)?, </span><span class="parameter" id="param-theme"><span class="type-annotation"><a href="../searchable_spinner_multiselect/SearchableMultiSelectThemeData-class.html">SearchableMultiSelectThemeData</a>?</span> <span class="parameter-name">theme</span>, </span><span class="parameter" id="param-maxHeight"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a>?</span> <span class="parameter-name">maxHeight</span>, </span><span class="parameter" id="param-maxSelection"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">maxSelection</span>, </span><span class="parameter" id="param-debounceDuration"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Duration-class.html">Duration</a></span> <span class="parameter-name">debounceDuration</span> = <span class="default-value">const Duration(milliseconds: 350)</span>, </span><span class="parameter" id="param-onSearchChanged"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/foundation/ValueChanged.html">ValueChanged</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span>?</span> <span class="parameter-name">onSearchChanged</span>, </span><span class="parameter" id="param-semanticLabel"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">semanticLabel</span></span>})</span>
         </dt>
         <dd>
-          
+          Creates a <a href="../searchable_spinner_multiselect/SearchableMultiSelect-class.html">SearchableMultiSelect</a>.
             <div class="constructor-modifier features">const</div>
         </dd>
         <dt id="SearchableMultiSelect.async" class="callable">
-          <span class="name"><a href="../searchable_spinner_multiselect/SearchableMultiSelect/SearchableMultiSelect.async.html">SearchableMultiSelect.async</a></span><span class="signature">({<span class="parameter" id="async-param-key"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/foundation/Key-class.html">Key</a>?</span> <span class="parameter-name">key</span>, </span><span class="parameter" id="async-param-items"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span> <span class="parameter-name">items</span> = <span class="default-value">const &lt;T&gt;[]</span>, </span><span class="parameter" id="async-param-itemLabel"><span>required</span> <span class="type-annotation"><a href="../searchable_spinner_multiselect/SearchableMultiSelectItemLabel.html">SearchableMultiSelectItemLabel</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span> <span class="parameter-name">itemLabel</span>, </span><span class="parameter" id="async-param-values"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span> <span class="parameter-name">values</span>, </span><span class="parameter" id="async-param-onChanged"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/foundation/ValueChanged.html">ValueChanged</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span>&gt;</span></span> <span class="parameter-name">onChanged</span>, </span><span class="parameter" id="async-param-label"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">label</span>, </span><span class="parameter" id="async-param-hintText"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">hintText</span> = <span class="default-value">&#39;Select items&#39;</span>, </span><span class="parameter" id="async-param-searchHintText"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">searchHintText</span> = <span class="default-value">&#39;Search...&#39;</span>, </span><span class="parameter" id="async-param-prefixIcon"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/IconData-class.html">IconData</a>?</span> <span class="parameter-name">prefixIcon</span>, </span><span class="parameter" id="async-param-clearable"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">clearable</span> = <span class="default-value">true</span>, </span><span class="parameter" id="async-param-enabled"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">enabled</span> = <span class="default-value">true</span>, </span><span class="parameter" id="async-param-searchable"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">searchable</span> = <span class="default-value">true</span>, </span><span class="parameter" id="async-param-selectAllEnabled"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">selectAllEnabled</span> = <span class="default-value">true</span>, </span><span class="parameter" id="async-param-selectAllText"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">selectAllText</span> = <span class="default-value">&#39;Select All&#39;</span>, </span><span class="parameter" id="async-param-clearAllText"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">clearAllText</span> = <span class="default-value">&#39;Clear All&#39;</span>, </span><span class="parameter" id="async-param-doneText"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">doneText</span> = <span class="default-value">&#39;Done&#39;</span>, </span><span class="parameter" id="async-param-emptyText"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">emptyText</span> = <span class="default-value">&#39;No items found&#39;</span>, </span><span class="parameter" id="async-param-loadingText"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">loadingText</span> = <span class="default-value">&#39;Loading...&#39;</span>, </span><span class="parameter" id="async-param-errorText"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">errorText</span> = <span class="default-value">&#39;Something went wrong&#39;</span>, </span><span class="parameter" id="async-param-validator"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/FormFieldValidator.html">FormFieldValidator</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span>&gt;</span>?</span> <span class="parameter-name">validator</span>, </span><span class="parameter" id="async-param-itemBuilder"><span class="type-annotation"><a href="../searchable_spinner_multiselect/SearchableMultiSelectItemBuilder.html">SearchableMultiSelectItemBuilder</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span>?</span> <span class="parameter-name">itemBuilder</span>, </span><span class="parameter" id="async-param-selectedTextBuilder"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">selectedTextBuilder</span>(<span class="parameter" id="param-values"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span> <span class="parameter-name">values</span></span>)?, </span><span class="parameter" id="async-param-theme"><span class="type-annotation"><a href="../searchable_spinner_multiselect/SearchableMultiSelectThemeData-class.html">SearchableMultiSelectThemeData</a>?</span> <span class="parameter-name">theme</span>, </span><span class="parameter" id="async-param-maxHeight"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a>?</span> <span class="parameter-name">maxHeight</span>, </span><span class="parameter" id="async-param-maxSelection"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">maxSelection</span>, </span><span class="parameter" id="async-param-debounceDuration"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Duration-class.html">Duration</a></span> <span class="parameter-name">debounceDuration</span> = <span class="default-value">const Duration(milliseconds: 350)</span>, </span><span class="parameter" id="async-param-onSearchChanged"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/foundation/ValueChanged.html">ValueChanged</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span>?</span> <span class="parameter-name">onSearchChanged</span>, </span><span class="parameter" id="async-param-semanticLabel"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">semanticLabel</span>, </span><span class="parameter" id="async-param-search"><span>required</span> <span class="type-annotation"><a href="../searchable_spinner_multiselect/SearchableMultiSelectSearch.html">SearchableMultiSelectSearch</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span>?</span> <span class="parameter-name">search</span>, </span><span class="parameter" id="async-param-loadMore"><span class="type-annotation"><a href="../searchable_spinner_multiselect/SearchableMultiSelectLoadMore.html">SearchableMultiSelectLoadMore</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span>?</span> <span class="parameter-name">loadMore</span></span>})</span>
+          <span class="name"><a href="../searchable_spinner_multiselect/SearchableMultiSelect/SearchableMultiSelect.async.html">SearchableMultiSelect.async</a></span><span class="signature">({<span class="parameter" id="async-param-key"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/foundation/Key-class.html">Key</a>?</span> <span class="parameter-name">key</span>, </span><span class="parameter" id="async-param-items"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span> <span class="parameter-name">items</span> = <span class="default-value">const &lt;Never&gt;[]</span>, </span><span class="parameter" id="async-param-itemLabel"><span>required</span> <span class="type-annotation"><a href="../searchable_spinner_multiselect/SearchableMultiSelectItemLabel.html">SearchableMultiSelectItemLabel</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span> <span class="parameter-name">itemLabel</span>, </span><span class="parameter" id="async-param-values"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span> <span class="parameter-name">values</span>, </span><span class="parameter" id="async-param-onChanged"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/foundation/ValueChanged.html">ValueChanged</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span>&gt;</span></span> <span class="parameter-name">onChanged</span>, </span><span class="parameter" id="async-param-label"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">label</span>, </span><span class="parameter" id="async-param-hintText"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">hintText</span> = <span class="default-value">&#39;Select items&#39;</span>, </span><span class="parameter" id="async-param-searchHintText"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">searchHintText</span> = <span class="default-value">&#39;Search...&#39;</span>, </span><span class="parameter" id="async-param-prefixIcon"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/IconData-class.html">IconData</a>?</span> <span class="parameter-name">prefixIcon</span>, </span><span class="parameter" id="async-param-clearable"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">clearable</span> = <span class="default-value">true</span>, </span><span class="parameter" id="async-param-enabled"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">enabled</span> = <span class="default-value">true</span>, </span><span class="parameter" id="async-param-searchable"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">searchable</span> = <span class="default-value">true</span>, </span><span class="parameter" id="async-param-selectAllEnabled"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">selectAllEnabled</span> = <span class="default-value">true</span>, </span><span class="parameter" id="async-param-selectAllText"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">selectAllText</span> = <span class="default-value">&#39;Select All&#39;</span>, </span><span class="parameter" id="async-param-clearAllText"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">clearAllText</span> = <span class="default-value">&#39;Clear All&#39;</span>, </span><span class="parameter" id="async-param-doneText"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">doneText</span> = <span class="default-value">&#39;Done&#39;</span>, </span><span class="parameter" id="async-param-emptyText"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">emptyText</span> = <span class="default-value">&#39;No items found&#39;</span>, </span><span class="parameter" id="async-param-loadingText"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">loadingText</span> = <span class="default-value">&#39;Loading...&#39;</span>, </span><span class="parameter" id="async-param-errorText"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">errorText</span> = <span class="default-value">&#39;Something went wrong&#39;</span>, </span><span class="parameter" id="async-param-validator"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/FormFieldValidator.html">FormFieldValidator</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span>&gt;</span>?</span> <span class="parameter-name">validator</span>, </span><span class="parameter" id="async-param-itemBuilder"><span class="type-annotation"><a href="../searchable_spinner_multiselect/SearchableMultiSelectItemBuilder.html">SearchableMultiSelectItemBuilder</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span>?</span> <span class="parameter-name">itemBuilder</span>, </span><span class="parameter" id="async-param-selectedTextBuilder"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">selectedTextBuilder</span>(<span class="parameter" id="param-values"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span> <span class="parameter-name">values</span></span>)?, </span><span class="parameter" id="async-param-theme"><span class="type-annotation"><a href="../searchable_spinner_multiselect/SearchableMultiSelectThemeData-class.html">SearchableMultiSelectThemeData</a>?</span> <span class="parameter-name">theme</span>, </span><span class="parameter" id="async-param-maxHeight"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a>?</span> <span class="parameter-name">maxHeight</span>, </span><span class="parameter" id="async-param-maxSelection"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">maxSelection</span>, </span><span class="parameter" id="async-param-debounceDuration"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Duration-class.html">Duration</a></span> <span class="parameter-name">debounceDuration</span> = <span class="default-value">const Duration(milliseconds: 350)</span>, </span><span class="parameter" id="async-param-onSearchChanged"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/foundation/ValueChanged.html">ValueChanged</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span>?</span> <span class="parameter-name">onSearchChanged</span>, </span><span class="parameter" id="async-param-semanticLabel"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">semanticLabel</span>, </span><span class="parameter" id="async-param-search"><span>required</span> <span class="type-annotation"><a href="../searchable_spinner_multiselect/SearchableMultiSelectSearch.html">SearchableMultiSelectSearch</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span>?</span> <span class="parameter-name">search</span>, </span><span class="parameter" id="async-param-loadMore"><span class="type-annotation"><a href="../searchable_spinner_multiselect/SearchableMultiSelectLoadMore.html">SearchableMultiSelectLoadMore</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span>?</span> <span class="parameter-name">loadMore</span></span>})</span>
         </dt>
         <dd>
-          
+          Creates a <a href="../searchable_spinner_multiselect/SearchableMultiSelect-class.html">SearchableMultiSelect</a> with asynchronous search support.
             <div class="constructor-modifier features">const</div>
         </dd>
     </dl>
@@ -118,7 +116,7 @@ Select All, Clear All, max selection, validation and custom builders.</p>
 
 </dt>
 <dd>
-  
+  Whether the field is clearable.
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
@@ -130,7 +128,7 @@ Select All, Clear All, max selection, validation and custom builders.</p>
 
 </dt>
 <dd>
-  
+  Text for the "Clear All" button.
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
@@ -142,7 +140,7 @@ Select All, Clear All, max selection, validation and custom builders.</p>
 
 </dt>
 <dd>
-  
+  Debounce duration for search.
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
@@ -154,7 +152,7 @@ Select All, Clear All, max selection, validation and custom builders.</p>
 
 </dt>
 <dd>
-  
+  Text for the "Done" button.
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
@@ -166,7 +164,7 @@ Select All, Clear All, max selection, validation and custom builders.</p>
 
 </dt>
 <dd>
-  
+  Text to show when no items are found.
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
@@ -178,7 +176,7 @@ Select All, Clear All, max selection, validation and custom builders.</p>
 
 </dt>
 <dd>
-  
+  Whether the field is enabled.
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
@@ -190,7 +188,7 @@ Select All, Clear All, max selection, validation and custom builders.</p>
 
 </dt>
 <dd>
-  
+  Text to show when an error occurs.
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
@@ -214,7 +212,7 @@ Select All, Clear All, max selection, validation and custom builders.</p>
 
 </dt>
 <dd>
-  
+  Hint text for the field.
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
@@ -226,7 +224,7 @@ Select All, Clear All, max selection, validation and custom builders.</p>
 
 </dt>
 <dd>
-  
+  Custom builder for items.
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
@@ -238,7 +236,7 @@ Select All, Clear All, max selection, validation and custom builders.</p>
 
 </dt>
 <dd>
-  
+  Function to get the label for an item.
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
@@ -250,7 +248,7 @@ Select All, Clear All, max selection, validation and custom builders.</p>
 
 </dt>
 <dd>
-  
+  The list of items to display.
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
@@ -274,7 +272,7 @@ Select All, Clear All, max selection, validation and custom builders.</p>
 
 </dt>
 <dd>
-  
+  Label for the field.
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
@@ -286,7 +284,7 @@ Select All, Clear All, max selection, validation and custom builders.</p>
 
 </dt>
 <dd>
-  
+  Text to show while loading items.
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
@@ -298,7 +296,7 @@ Select All, Clear All, max selection, validation and custom builders.</p>
 
 </dt>
 <dd>
-  
+  Function to load more items.
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
@@ -310,7 +308,7 @@ Select All, Clear All, max selection, validation and custom builders.</p>
 
 </dt>
 <dd>
-  
+  Maximum height of the dialog.
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
@@ -322,7 +320,7 @@ Select All, Clear All, max selection, validation and custom builders.</p>
 
 </dt>
 <dd>
-  
+  Maximum number of items that can be selected.
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
@@ -334,7 +332,7 @@ Select All, Clear All, max selection, validation and custom builders.</p>
 
 </dt>
 <dd>
-  
+  Callback when the selection changes.
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
@@ -346,7 +344,7 @@ Select All, Clear All, max selection, validation and custom builders.</p>
 
 </dt>
 <dd>
-  
+  Callback when search query changes.
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
@@ -358,7 +356,7 @@ Select All, Clear All, max selection, validation and custom builders.</p>
 
 </dt>
 <dd>
-  
+  Prefix icon for the field.
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
@@ -382,7 +380,7 @@ Select All, Clear All, max selection, validation and custom builders.</p>
 
 </dt>
 <dd>
-  
+  Asynchronous search function.
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
@@ -394,7 +392,7 @@ Select All, Clear All, max selection, validation and custom builders.</p>
 
 </dt>
 <dd>
-  
+  Whether searching is enabled.
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
@@ -406,7 +404,7 @@ Select All, Clear All, max selection, validation and custom builders.</p>
 
 </dt>
 <dd>
-  
+  Hint text for the search field.
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
@@ -418,7 +416,7 @@ Select All, Clear All, max selection, validation and custom builders.</p>
 
 </dt>
 <dd>
-  
+  Whether "Select All" is enabled.
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
@@ -430,7 +428,7 @@ Select All, Clear All, max selection, validation and custom builders.</p>
 
 </dt>
 <dd>
-  
+  Text for the "Select All" button.
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
@@ -442,7 +440,7 @@ Select All, Clear All, max selection, validation and custom builders.</p>
 
 </dt>
 <dd>
-  
+  Custom builder for the selected text.
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
@@ -454,7 +452,7 @@ Select All, Clear All, max selection, validation and custom builders.</p>
 
 </dt>
 <dd>
-  
+  Semantic label for the field.
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
@@ -466,7 +464,7 @@ Select All, Clear All, max selection, validation and custom builders.</p>
 
 </dt>
 <dd>
-  
+  Theme data for the widget.
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
@@ -478,7 +476,7 @@ Select All, Clear All, max selection, validation and custom builders.</p>
 
 </dt>
 <dd>
-  
+  Validator for the field.
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
@@ -490,7 +488,7 @@ Select All, Clear All, max selection, validation and custom builders.</p>
 
 </dt>
 <dd>
-  
+  The currently selected values.
   <div class="features"><span class="feature">final</span></div>
 
 </dd>

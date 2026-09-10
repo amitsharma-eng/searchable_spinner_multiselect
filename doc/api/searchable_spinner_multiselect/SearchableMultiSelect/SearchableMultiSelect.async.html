@@ -55,7 +55,7 @@
     <section class="multi-line-signature">
       const
       <span class="name ">SearchableMultiSelect&lt;<wbr><span class="type-parameter">T</span>&gt;.async</span>(<wbr>{<ol class="parameter-list"> <li><span class="parameter" id="async-param-key"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/foundation/Key-class.html">Key</a>?</span> <span class="parameter-name">key</span>, </span></li>
-<li><span class="parameter" id="async-param-items"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span> <span class="parameter-name">items</span> = <span class="default-value">const &lt;T&gt;[]</span>, </span></li>
+<li><span class="parameter" id="async-param-items"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span> <span class="parameter-name">items</span> = <span class="default-value">const &lt;Never&gt;[]</span>, </span></li>
 <li><span class="parameter" id="async-param-itemLabel"><span>required</span> <span class="type-annotation"><a href="../../searchable_spinner_multiselect/SearchableMultiSelectItemLabel.html">SearchableMultiSelectItemLabel</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span> <span class="parameter-name">itemLabel</span>, </span></li>
 <li><span class="parameter" id="async-param-values"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span> <span class="parameter-name">values</span>, </span></li>
 <li><span class="parameter" id="async-param-onChanged"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/foundation/ValueChanged.html">ValueChanged</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span>&gt;</span></span> <span class="parameter-name">onChanged</span>, </span></li>
@@ -88,6 +88,9 @@
 </ol>})
     </section>
     
+<section class="desc markdown">
+  <p>Creates a <a href="../../searchable_spinner_multiselect/SearchableMultiSelect-class.html">SearchableMultiSelect</a> with asynchronous search support.</p>
+</section>
 
 
     
@@ -95,7 +98,7 @@
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">const SearchableMultiSelect.async({
   super.key,
-  this.items = const &lt;T&gt;[],
+  this.items = const &lt;Never&gt;[],
   required this.itemLabel,
   required this.values,
   required this.onChanged,

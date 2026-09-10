@@ -52,8 +52,8 @@ class SearchableMultiSelect<T> extends StatefulWidget {
     this.debounceDuration = const Duration(milliseconds: 350),
     this.onSearchChanged,
     this.semanticLabel,
-  })  : search = null,
-        loadMore = null;
+  }) : search = null,
+       loadMore = null;
 
   /// Creates a [SearchableMultiSelect] with asynchronous search support.
   const SearchableMultiSelect.async({

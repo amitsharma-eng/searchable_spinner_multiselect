@@ -5,9 +5,15 @@ import 'package:searchable_spinner_multiselect/searchable_spinner_multiselect.da
 
 void main() => runApp(const DemoApp());
 
+/// A simple customer model.
 class Customer {
+  /// Creates a [Customer].
   const Customer(this.id, this.name);
+
+  /// The customer's unique identifier.
   final int id;
+
+  /// The customer's name.
   final String name;
 
   @override
@@ -17,7 +23,9 @@ class Customer {
   int get hashCode => id.hashCode;
 }
 
+/// The demo application widget.
 class DemoApp extends StatefulWidget {
+  /// Creates a [DemoApp].
   const DemoApp({super.key});
 
   @override
